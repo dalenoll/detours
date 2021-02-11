@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>MCTS Detours</title>
+<!-- START:stylesheet -->
+  <%= javascript_include_tag :defaults %>
+  <%= calendar_date_select_includes "red" %>
+  <%= stylesheet_link_tag "detour", :media => "all" %><!-- <label id="code.slt"/> -->
+<!-- END:stylesheet -->
+</head>
+<body >
+  <div id="banner">
+    <%= image_tag("mcts-main-header.gif") %>
+  </div>
+  <div id="header-bar">
+    <div id="user-id-bar">
+      <%= full_name || "Not logged In" %>
+    </div>
+  </div>
+  <div id="columns">
+    <div id="side">
+        <a href="http://web.mcts.org">MCTS Home</a><br />
+        <a href="http://www.ridemcts.com">RideMCTS.com</a><br />
+        <a href="http://web2.mcts.org/index.html">Special Apps</a><br />
+        <a href="http://web2.mcts.org/forms/index.html">Forms</a><br />
+        <a href="http://web2.mcts.org/cust_info/index.html">Cust Info</a><br />
+        <hr>
+
+      <a href="/detours">Detours (route)</a><br />
+      <a href="/detours/index_by_date">Detours (date)</a><br />
+      <a href="/detours/inactive">Canceled Detours</a><br />
+      <%= br_link_to_if_accessible('Locations', { :controller => 'locations', :action => 'index' } ) %>
+      <%= br_link_to_if_accessible('Notifications', { :controller => 'notifications', :action => 'index' } ) %>
+      <%= br_link_to_if_accessible('Settings', { :controller => 'settings', :action => 'index' } ) %>
+      <%= br_link_to_if_accessible('Users', { :controller => 'users', :action => 'index' } ) %>
+      <%= br_link_to_if_accessible('Roles', { :controller => 'roles', :action => 'index' } ) %>
+      <%= br_link_to_if_accessible('Controllers &amp; Actions', { :controller => 'controllers_and_actions', :action => 'index' } ) %>
+      <% if session[:userid] %>
+        <%= link_to 'Log Out', :controller => 'admin', :action => 'logout' %>
+      <% else %>
+        <%= link_to 'Log In', :controller => 'admin', :action => 'login' %>
+      <% end %>
+    </div>
+    <div id="main">
+      <% if flash[:notice] -%>
+        <div id="notice"><%= flash[:notice] %></div>
+      <% end -%>
+
+      <%= yield :layout %>
+    </div>
+  </div>
+</body>
+</html>

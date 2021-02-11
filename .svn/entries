@@ -1,0 +1,262 @@
+8
+
+dir
+66
+http://wayland.mcts.org/repos/detour
+http://wayland.mcts.org/repos/detour
+
+
+
+2010-06-23T12:19:09.908376Z
+66
+dale
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5fb68575-c2e4-48ec-a395-dbedeceb3241
+
+test
+dir
+
+app
+dir
+
+notifications.inc
+file
+
+
+
+
+2009-09-24T14:07:24.000000Z
+612a42569a601536f00f48fb6cbe3dc0
+2009-09-20T21:50:22.657286Z
+28
+dale
+
+log
+dir
+
+process_notifications.pl
+file
+70
+
+
+
+2012-04-17T14:35:23.000000Z
+48edd08389f7da2b8991310614d93a8a
+2012-04-17T14:35:55.502551Z
+70
+dale
+has-props
+
+Rakefile
+file
+
+
+
+
+2009-09-17T15:24:01.000000Z
+17f2f134da4cd31ea095d5868ca89e86
+2008-11-29T16:16:12.299158Z
+1
+dale
+
+detour_development.dmp
+file
+
+
+
+
+2009-09-18T19:20:16.000000Z
+0d4590d88dc8878c0bbf6b0e2a82c6c5
+2009-09-17T23:39:41.812786Z
+22
+dale
+
+waves
+dir
+
+db
+dir
+
+mk_c_and_a_intserts
+file
+
+
+
+
+2009-09-17T15:24:01.000000Z
+b9a272d39a3d721f01071e5a62c6e2c9
+2008-12-06T15:32:23.797612Z
+9
+dale
+has-props
+
+notes
+file
+
+
+
+
+2009-10-12T18:14:28.000000Z
+c3a13c9426956ecdf18ba7af218972b0
+2009-10-13T21:15:14.052477Z
+52
+dale
+
+detour_seed_data.sql
+file
+
+
+
+
+2009-09-18T19:20:16.000000Z
+580f8825a407285d04ef100ea31003fc
+2009-09-17T23:39:41.812786Z
+22
+dale
+
+cont_and_act.txt
+file
+
+
+
+
+2009-09-17T15:24:01.000000Z
+779cf86d74fa9f07a5616f6902d80536
+2008-12-06T15:32:23.797612Z
+9
+dale
+
+README
+file
+
+
+
+
+2009-09-17T15:24:01.000000Z
+0cdf56769f20a2b73a929ac3ba633152
+2008-11-29T16:16:12.299158Z
+1
+dale
+
+vendor
+dir
+
+tmp
+dir
+
+idx.txt
+file
+
+
+
+
+2009-09-17T15:24:01.000000Z
+66981bc1aa0678ed3fd9c3c998bda591
+2008-12-06T15:32:23.797612Z
+9
+dale
+
+canda.sql
+file
+
+
+
+
+2009-09-17T15:24:01.000000Z
+3fd1efe45bf6a61018e4deefb00f28ef
+2008-12-06T15:32:23.797612Z
+9
+dale
+
+lowernav.erb
+file
+
+
+
+
+2009-09-17T15:24:01.000000Z
+865544da8e395b2ae37d1fc1cb752fb9
+2008-12-06T01:11:40.369076Z
+2
+dale
+
+script
+dir
+
+config
+dir
+
+doc
+dir
+
+ToDo
+file
+
+
+
+
+2009-10-12T10:52:18.000000Z
+cc5ff770537c177784eaa968a1bebfe0
+2009-10-12T02:58:15.239655Z
+44
+dale
+
+lib
+dir
+
+mk_seed
+file
+
+
+
+
+2009-09-24T15:26:47.000000Z
+5fbe9dbded8d8ae2d638619d0ea70559
+2009-09-24T15:28:10.935160Z
+30
+dale
+has-props
+
+clear_old_sessions.sql
+file
+
+
+
+
+2009-09-18T19:20:16.000000Z
+b5aa85800eed1ff6185b85489f2564e9
+2009-09-18T03:06:45.310154Z
+23
+dale
+
+call
+dir
+
+public
+dir
+
+seed.sql
+file
+
+
+
+
+2009-10-13T17:39:51.000000Z
+6935546c6eb4bf6792eb252f34a36e29
+2009-10-13T21:15:14.052477Z
+52
+dale
+

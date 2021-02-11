@@ -1,0 +1,19 @@
+/* CSS Document */
+
+/* ====================================================================
+COLUMNS LAYOUT
+-------------------------------------------------------------------- */
+#wrap { width:771px; margin: 0px; padding: 0px; background:#FFFFFF;}
+#header {padding:0px;margin:0px;width:auto;height:63px}
+#footer {background-color:#FFFFFF;clear:both;padding: 0px;margin: 0px;height: 40px;width: 100%;border-top-width: 1px;border-top-style: solid;border-right-style: none;border-bottom-style: none;border-left-style: none;border-top-color: #FFFFFF;}
+
+/* ====================================================================
+BODY LAYOUT
+-------------------------------------------------------------------- */
+#column-one{float: left;width: 350px; min-height: 500px;/*for mozilla*/ height: auto !important; height: 500px; margin: 0px; padding: 0px; background-color: #FFFFFF; }
+#column-two {float:left; width: 171px; min-height: 500px;/*for mozilla*/ height: auto !important; height: 500px; margin: 0px; padding: 0px; background-color: #8F92FB;}
+#column-three {float:right;width: 245px;min-height: 550px;height: auto !important;height: 520px;margin: 0px;padding: 0px;background-color: #3842F1;border-right-width: 1px;	border-top-style: none;	border-right-style: solid;	border-bottom-style: none; border-left-style: none;border-right-color: #8F92FB;	border-top-width: 0px;border-bottom-width: 0px;border-left-width: 0px;}
+#column-one-content, #column-two-content, #column-three-content{padding-left:5px;padding-bottom:5px;padding-top:5px;padding-right:0px;border: none;color: #000000;}
+#column-one-content {background: #FFFFFF;}
+#column-two-content {background: #8F92FB;margin-left: 10px;}
+#column-three-content {font-family: Arial, Helvetica, sans-serif;font-size: 10px;color: #000000;padding: 0px;}

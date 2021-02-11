@@ -1,0 +1,11 @@
+#!/bin/bash
+cat cont_and_act.txt | while read F dummy A
+do   
+  CONT=`basename $F | sed 's/_.*//'`
+  T=`basename $F | cut -c1 |  tr [a-z] [A-Z]`
+  ICONT=${T}`echo $CONT | cut -c2-`
+
+  T=`echo $A | cut -c1 | tr [a-z] [A-Z]`
+  IACT=${T}`echo ${A} | cut -c2-`
+  echo "insert into controllers_and_actions ( name, controller, action) values ( '$IACT $ICONT', '$CONT', '$A' );"
+done

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/detour/!svn/ver/59/app/views/layouts
+END
+__controllers_and_actions.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/detour/!svn/ver/4/app/views/layouts/__controllers_and_actions.html.erb
+END
+__notifications.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/detour/!svn/ver/1/app/views/layouts/__notifications.html.erb
+END
+__settings.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/detour/!svn/ver/2/app/views/layouts/__settings.html
+END
+__locations.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/detour/!svn/ver/1/app/views/layouts/__locations.html.erb
+END
+__users.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/detour/!svn/ver/2/app/views/layouts/__users.html.erb
+END
+__roles.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/detour/!svn/ver/11/app/views/layouts/__roles.html.erb
+END
+__detours.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/detour/!svn/ver/1/app/views/layouts/__detours.html.erb
+END
+application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/detour/!svn/ver/71/app/views/layouts/application.html.erb
+END

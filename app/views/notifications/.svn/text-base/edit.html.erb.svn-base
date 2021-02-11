@@ -1,0 +1,41 @@
+<h1>Edit Notification</h1>
+
+<% form_for(@notification) do |f| %>
+  <%= f.error_messages %>
+
+  <table>
+    <tr>
+      <td><%= f.label :detour_id %></td>
+      <td><%= f.text_field :detour_id, :size => '10' %></td>
+      <td><%= f.label :location_id %></td>
+      <td><%= @notification.location.long_name %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :notification_type %></td>
+      <td><%= f.text_field :notification_type, :size => '10' %></td>
+      <td><%= f.label :notification_method %></td>
+      <td><%= f.text_field :notification_method, :size => '10' %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :delivered %></td>
+      <td><%= f.check_box :delivered %></td>
+      <td><%= f.label :last_attempt, 'Last Delivery Attempt' %></td>
+      <td><%= @notification.last_attempt_formated %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :acknowledge_requested %></td>
+      <td><%= f.check_box :acknowledge_requested %></td>
+      <td><%= f.label :acknowledged_at %></td>
+      <td><%= @notification.acknowledged_at_formated %>
+    </tr>
+  </table>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<div id='lower-navigation'>
+<h2>
+<%= link_to 'Back to List', notifications_path %>
+</h2>
+</div>

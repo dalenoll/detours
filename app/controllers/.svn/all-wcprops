@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repos/detour/!svn/ver/66/app/controllers
+END
+locations_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/detour/!svn/ver/11/app/controllers/locations_controller.rb
+END
+application.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/detour/!svn/ver/20/app/controllers/application.rb
+END
+settings_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/detour/!svn/ver/2/app/controllers/settings_controller.rb
+END
+users_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/detour/!svn/ver/53/app/controllers/users_controller.rb
+END
+roles_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/detour/!svn/ver/12/app/controllers/roles_controller.rb
+END
+detours_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/detour/!svn/ver/71/app/controllers/detours_controller.rb
+END
+admin_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/detour/!svn/ver/23/app/controllers/admin_controller.rb
+END
+controllers_and_actions_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/detour/!svn/ver/10/app/controllers/controllers_and_actions_controller.rb
+END
+notifications_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/detour/!svn/ver/32/app/controllers/notifications_controller.rb
+END

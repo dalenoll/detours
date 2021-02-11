@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/detour/!svn/ver/65/app/views/detours
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/detour/!svn/ver/62/app/views/detours/edit.html.erb
+END
+show.html.erb.bu
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/detour/!svn/ver/1/app/views/detours/show.html.erb.bu
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/detour/!svn/ver/64/app/views/detours/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/detour/!svn/ver/62/app/views/detours/new.html.erb
+END
+new.html.erb,v
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/detour/!svn/ver/1/app/views/detours/new.html.erb,v
+END
+index_by_date.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/detour/!svn/ver/72/app/views/detours/index_by_date.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/detour/!svn/ver/62/app/views/detours/show.html.erb
+END
+index.xml.builder
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/detour/!svn/ver/18/app/views/detours/index.xml.builder
+END
+inactive.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/detour/!svn/ver/65/app/views/detours/inactive.html.erb
+END
+show_inactive.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/detour/!svn/ver/62/app/views/detours/show_inactive.html.erb
+END

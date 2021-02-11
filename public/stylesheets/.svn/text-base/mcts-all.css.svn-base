@@ -1,0 +1,601 @@
+/* CSS Document */
+
+/* ====================================================================
+GENERAL STYLING
+-------------------------------------------------------------------- */
+/* border:nones are for NN4 */
+html { margin: 0px; padding: 0px; }
+body{ margin: 0px;	padding: 0px;	background-color: #FFFFFF;	font-family: Arial, Helvetica, sans-serif;	font-size: 12px; color: #000000; }
+a:link {text-decoration: underline; color: #3140f7;}
+a:hover {text-decoration:none; color: #D31111;}
+a:active {text-decoration: underline; color: #3140f7;}
+a:visited {text-decoration: underline; color: #3140f7;}
+a:visited:hover {text-decoration:none; color: #D31111;}
+a img,:link img,:visited img {border: none;}
+dt { font-weight: bold; }
+dd { margin-bottom:15px; }
+
+ul{ list-style-type: disc;}
+ul ul{ list-style-type: disc;}
+ul ul ul{ list-style-type: none;}
+
+div { margin: 0px; padding: 0px; }
+/*p {padding: 0px; margin: 0px;} */
+.clear { clear: both;} /* CSS HACK: only for NN4, so now use Caio hack to cleanse palette */
+/*/*/ .clear { display: none; } /* */
+/* box-wrap is only needed if you want to set a background color for the columns, put a border round the content block or fix the content width */
+div#ads {margin-top: 0px;margin-right: 0px;	margin-bottom: 0px;	margin-left: 0px;padding-top: 20px;	padding-right: 0px;	padding-bottom: 0px;padding-left: 0px;}
+div#detour{color:#FF0000;font-weight:bold;background-image: url(/_images/routes/detour.gif);background-repeat: no-repeat;background-position: 0px 0px;padding-left: 60px;height:auto;}
+div#previewroute{
+	background-color: #E9C600;
+	width: auto;
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+}
+
+div#utilitylinks{text-decoration: none;padding-right: 15px;width: auto;	float: right;font-family: Arial, Helvetica, sans-serif;	font-size: 9px;	color: #FFFFFF;	font-weight: bold;}
+div#utilitylinks a:link {font-size: 9px;font-family: Arial, Helvetica, sans-serif;color:#FFFFFF;font-weight: bold;text-decoration: none;}
+div#utilitylinks a:active {font-size: 9px;font-family: Arial, Helvetica, sans-serif;color:#FFFFFF;font-weight: bold;text-decoration: none;}
+div#utilitylinks a:active {font-size: 9px;font-family: Arial, Helvetica, sans-serif;color:#FFFFFF;font-weight: bold;text-decoration: none;}
+div#utilitylinks a:visited {font-size: 9px;font-family: Arial, Helvetica, sans-serif;color:#FFFFFF;font-weight: bold;text-decoration: none;}
+div#utilitylinks a:hover {font-size: 9px;font-family: Arial, Helvetica, sans-serif;color:#FFFFFF;font-weight: bold;text-decoration: underline;}
+div#utilitylinks a:visited:hover {font-size: 9px;font-family: Arial, Helvetica, sans-serif;color:#FFFFFF;font-weight: bold;text-decoration: underline;}
+
+/* ====================================================================
+DHTML CSS MENU CLASSES
+-------------------------------------------------------------------- */
+#nav {
+width: 167px;
+background: #eee;
+/*border-bottom: 1px solid #D3D2FE;*/
+}
+
+#nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+width: 167px;
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 10px;
+color : #FFFFFF; 
+font-weight: bold;
+border-bottom: 1px solid #D3D2FE;
+/*border-bottom: 1px solid #ccc;*/
+}
+
+#nav a {
+display: block;
+width: 157px;
+margin: 0;
+padding: 5px;
+color: #FFFFFF;	
+background: #5B63F8; /* IE6 Bug */		
+border: 1px solid #D3D2FE; /* IE6 Bug */ 
+border-bottom: 0;
+text-decoration: none;
+}
+
+
+#nav a {
+color: #FFF;
+background: #5B63F8;
+
+}
+
+#nav a:hover {
+color: #FFF;
+background: #3333CC;
+}
+
+#nav li {
+position: relative;
+}
+
+#nav ul ul ul {
+position: absolute;
+top: 0;
+left: 168px;
+width: 100%;
+}
+
+#nav ul ul ul,
+#nav ul ul li:hover ul ul
+{display: none;}
+
+#nav ul ul li:hover ul,
+#nav ul ul ul li:hover ul
+{display: block;}
+
+#nav ul ul a.more {
+	background: url(/_images/common/arrow.png) no-repeat right center;
+	background-color: #5B63F8;
+}
+
+#nav ul ul a:hover.more {
+	background: url(/_images/common/arrow.png) no-repeat right center;
+	background-color: #3333CC;
+}
+/* ====================================================================
+BREADCRUMBS LAYOUT
+-------------------------------------------------------------------- */
+#breadcrumbs_bar {background-color:#c99;padding:0px;font-family: Arial, Helvetica, sans-serif;font-size: 9px; color: #FFFFFF;text-decoration: none;}
+#breadcrumbs_bar ul{margin:0px;padding:0px;}
+#breadcrumbs_bar li{display:inline;list-style:none;margin:0px;padding:0px;}
+#breadcrumbs_bar p {margin:0px 0px 10px;padding:0px;height: auto;border: none;left: 0px;top: 0px;right: 0px;bottom: 0px;}
+.ecmBreadCrumbFolders a:link {font-family: Arial, Helvetica, sans-serif;font-size: 9px; color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbFolders a:active {font-family: Arial, Helvetica, sans-serif;font-size: 9px; color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbFolders a:visited {font-family: Arial, Helvetica, sans-serif;font-size: 9px; color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbFolders a:active {font-family: Arial, Helvetica, sans-serif;font-size: 9px; color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbFolders a:hover {text-decoration: underline;}
+.ecmBreadCrumbFolders a:visited:hover {text-decoration: underline;}
+.ecmBreadCrumbArrow a:link {font-family: Arial, Helvetica, sans-serif;font-size: 10px;font-variant: small-caps;color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbArrow a:active {font-family: Arial, Helvetica, sans-serif;font-size: 10px;font-variant: small-caps;color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbArrow a:visited {font-family: Arial, Helvetica, sans-serif;font-size: 10px;font-variant: small-caps;color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbArrow a:active {font-family: Arial, Helvetica, sans-serif;font-size: 10px;font-variant: small-caps;color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbArrow a:hover {text-decoration: underline;}
+.ecmBreadCrumbArrow a:visited:hover {text-decoration: underline;}
+.ecmBreadCrumbCBTitle a:link {font-family: Arial, Helvetica, sans-serif;font-size: 10px; color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbCBTitle a:active {font-family: Arial, Helvetica, sans-serif;font-size: 10px; color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbCBTitle a:visited {font-family: Arial, Helvetica, sans-serif;font-size: 10px; color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbCBTitle a:active {font-family: Arial, Helvetica, sans-serif;font-size: 10px; color: #FFFFFF;text-decoration: none;} 
+.ecmBreadCrumbCBTitle a:hover {text-decoration: underline;}
+.ecmBreadCrumbCBTitle a:visited:hover {text-decoration: underline;}
+
+/* ====================================================================
+SITEMAP LAYOUT
+-------------------------------------------------------------------- */
+div#sitemap {margin:0px;padding:0px;line-height: 18px;}
+div#sitemap a:link{text-decoration:none;}
+div#sitemap a:active{text-decoration:none;}
+div#sitemap a:visited{text-decoration:none;}
+div#sitemap a:hover{text-decoration:underline;}
+div#sitemap a:visited:hover{text-decoration:underline;}
+div#sitemap li, div#sitemap ul{	padding: 0px 0px 0px 24px;	margin: 0px; list-style-type: none;}
+div#sitemap ul {margin: 0px 0px 0px -24px;background: url(/_images/sitemap/sitemap-exim.gif) repeat-y;}
+div#sitemap ul.last {background: none;}
+div#sitemap li {background: url(/_images/sitemap/sitemap-extm.gif) no-repeat;padding-top:3px;}
+div#sitemap li.last {background: url(/_images/sitemap/sitemap-exlm.gif) no-repeat;}
+
+/* ====================================================================
+CUSTOM CLASSES
+-------------------------------------------------------------------- */
+.rf { font-family: Arial, Helvetica, sans-serif; font-size: 10px; width: 170px;	padding: 0px; height: 20px; }
+div#copyright { font-family: Arial, Helvetica, sans-serif;	font-size: 11px; color: #999999; font-weight: bold; }
+#copyright a:link { font-family: Arial, Helvetica, sans-serif;font-size: 11px; color: #999999; font-weight: bold; text-decoration:none; }
+#copyright a:active { font-family: Arial, Helvetica, sans-serif;font-size: 11px; color: #999999; font-weight: bold; text-decoration:none; }
+#copyright a:visited { font-family: Arial, Helvetica, sans-serif;font-size: 11px; color: #999999; font-weight: bold; text-decoration:none; }
+#copyright a:hover { font-family: Arial, Helvetica, sans-serif;	font-size: 11px; color: #999999; font-weight: bold;text-decoration:underline;}
+#copyright a:visited:hover { font-family: Arial, Helvetica, sans-serif;	font-size: 11px; color: #999999; font-weight: bold;text-decoration:underline;}
+.whiteborders {	border: 1px solid #FFFFFF;}
+.feature_headline {	font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666;	font-weight: bold;}
+.feature_text {	font-family: Arial, Helvetica, sans-serif; font-size: 11px;	color: #000000;}
+.search_text {	font-family: Arial, Helvetica, sans-serif;	font-size: 12px; font-weight: bold;	color: #FFFFFF;}
+.search_box { width: 120px;	height: 15px;}
+.routefinder { height: auto; width: 171px; padding: 0px; margin: 0px;}
+/* .column-onemenu { height: 350px; vertical-align: top;	margin-bottom: 50px; margin-top: 0px; margin-right: 0px; margin-left: 0px;}*/
+.whitebottom {border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;}
+
+/* ====================================================================
+ROUTE PAGE STYLING
+-------------------------------------------------------------------- */
+.route_header  {margin: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color : #FFFFFF;text-decoration : none;} 
+a.route_header:link {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color : #FFFFFF;text-decoration : none;} 
+a.route_header:visited {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color : #FFFFFF;text-decoration : none;} 
+a.route_header:hover {color: #3333CC; text-decoration : underline} 
+a.route_header:visited:hover {color: #3333CC; text-decoration : underline} 
+
+.route_timetables {font-family: Arial, Helvetica, sans-serif;font-size: 11px;color : #00089E;text-decoration : none;font-weight: bold;} 
+a.route_timetables:link {font-family: Arial, Helvetica, sans-serif;font-size: 11px;color : #00089E;text-decoration : underline;font-weight: bold;} 
+a.route_timetables:active {font-family: Arial, Helvetica, sans-serif;font-size: 11px;color : #00089E;text-decoration : underline;font-weight: bold;} 
+a.route_timetables:visited {font-family: Arial, Helvetica, sans-serif;font-size: 11px;color : #00089E;text-decoration : underline;font-weight: bold;} 
+a.route_timetables:hover {color : #3333CC; text-decoration : underline}
+a.route_header:visited:hover {color: #FF0000; text-decoration : underline}  
+
+.route_legend {font-family: Arial, Helvetica, sans-serif;font-size: 10px;color : #00089E;text-decoration : none;} 
+a.route_legend:link {font-family: Arial, Helvetica, sans-serif;font-size: 10px;color : #00089E;text-decoration : none;} 
+a.route_legend:active {font-family: Arial, Helvetica, sans-serif;font-size: 10px;color : #00089E;text-decoration : none;} 
+a.route_legend:visited {font-family: Arial, Helvetica, sans-serif;font-size: 10px;color : #00089E;text-decoration : none;} 
+a.route_legend:hover {color : #3333CC; text-decoration : none}
+a.route_legend:visited:hover {color: #FF0000; text-decoration : none} 
+
+#notes {border: 1px solid #000000;	position:absolute; left:460px;	top:120px;	width:300px; height:150px; background-color:#FFFFCC; overflow:auto;	margin: 0px; padding: 0px;	visibility: hidden;}
+#notes p {font-family: Arial, Helvetica, sans-serif;font-size: 12px; color: #000000; text-decoration : none; background-color:#FFFFCC;}
+
+.route_title {font-family: Arial, Helvetica, sans-serif;font-size: 16px;font-weight: bold;text-decoration: none;color: #FFFFFF;}
+.routetextbold {font-family: Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bolder;color: #00089E;text-decoration: none;}
+a.routetextbold:link{font-family: Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bolder;color: #00089E;text-decoration: none;}
+a.routetextbold:active{font-family: Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bolder;color: #00089E;text-decoration: none;}
+a.routetextbold:visited{font-family: Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bolder;color: #00089E;text-decoration: none;}
+a.routetextbold:hover {font-family: Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bolder;color: #00089E;text-decoration: none;}
+a.routetextbold:visited:hover {font-family: Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bolder;color: #00089E;text-decoration: none;}
+.route_bdr_btm {border-bottom-width: 1px;border-top-style: none;border-right-style: none;border-bottom-style: solid;border-left-style: none;border-bottom-color: #00089E;text-decoration : none}
+a.route_bdr_btm:link {border-bottom-width: 1px;border-top-style: none;border-right-style: none;border-bottom-style: solid;border-left-style: none;border-bottom-color: #00089E;text-decoration : none}
+a.route_bdr_btm:active {border-bottom-width: 1px;border-top-style: none;border-right-style: none;border-bottom-style: solid;border-left-style: none;border-bottom-color: #00089E;text-decoration : none}
+.lightborder {border: 1px solid #818181;}
+.red {color: #FF0000}
+.white {color: #FFFFFF}
+.whiteSM {color: #FFFFFF; font-size: 10px; line-height: 12px;}
+.gray {color: #535353}
+.graySM {color: #535353; font-size: 10px; line-height: 12px;}
+p.grayMED {
+color: #999999; 
+font-size: 11px; 
+line-height: 13px;
+margin-left:20px;
+margin-top:-10px;
+
+/*sets left margin in IE */
+margin-left: 0px !important;
+margin-left: 20px;
+margin-left/**/:/**/20px;
+
+/* FF doesn't like left margin, so here's padding left for it*/
+padding-left: 20px !important;
+padding-left: 0px;
+padding-left/**/:/**/0px;
+}
+#highlight {background-color:yellow;font-weight:bold;clear:both;}
+
+/* ====================================================================
+3D look tables
+-------------------------------------------------------------------- */
+TABLE.grid3d {BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #cccccc 1px solid; MARGIN: 0px 0px 0.5em 2em; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #f0f7ff}
+TABLE.grid3d TD {BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #cccccc 1px solid}
+TABLE.grid3d TH {BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #e0e7f7 1px solid; BORDER-LEFT: #e0e7f7 1px solid; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #c7d0e0}
+TABLE.grid3d TH.tfoot {BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #e0e7f7 1px solid; BORDER-LEFT: #e0e7f7 1px solid; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #c7d0e0}
+TABLE.grid3d TBODY TR.e TH {BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #e0e7f7}
+TABLE.grid3d TBODY TR.o TH {BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #e0e7f7}
+TABLE.grid3d TR.e TD {BACKGROUND-COLOR: #e7f0fa; TEXT-ALIGN: center}
+TABLE.grid3d TR.o TD {BACKGROUND-COLOR: #f0f7ff; TEXT-ALIGN: center}
+TABLE.grid3d TR TD.left {TEXT-ALIGN: left}
+TABLE.grid3d TR TH.left {TEXT-ALIGN: left}
+TABLE.grid3d TR.tfoot TH.left {TEXT-ALIGN: left}
+TABLE.grid3d THEAD TR TH {FONT-WEIGHT: bold; TEXT-ALIGN: center}
+TABLE.grid3d TR.tfoot TH {FONT-WEIGHT: bold; TEXT-ALIGN: center}
+TABLE.grid3d TBODY.left TD {TEXT-ALIGN: left}
+TABLE.sidebar3d {MARGIN: 0px 0px 0.5em; BORDER-LEFT: #fff 0.5ex solid; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BACKGROUND-COLOR: #f0f7ff; BORDER-BOTTOM-STYLE: none}
+TABLE.sidebar3d TD {BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 0.5ex; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 0.5ex; PADDING-BOTTOM: 0.5ex; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 0.5ex; BORDER-BOTTOM: #999999 1px solid}
+TABLE.sidebar3d P {MARGIN: 0px 0px 0.3em; LINE-HEIGHT: 1.1em}
+TABLE.sidebar {BORDER-LEFT: white 0.5em solid; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-BOTTOM-STYLE: none}
+TABLE.sidebar P.last {MARGIN-BOTTOM: 0px}
+TABLE.right {left-margin: 1em; bottom-margin: 1ex}
+
+/* ====================================================================
+CLASSES FOR CONTENT SWITCHER
+-------------------------------------------------------------------- */
+.gallerycontent{
+width: 243px;
+height: 191px;
+padding: 0px;
+display: block;
+}
+
+
+/* ====================================================================
+CLASSES FOR GLOBAL NAV BAR
+-------------------------------------------------------------------- */
+#globalNav {
+	background-color: #6699CC;
+	background-image: url(_images/globalNav/bg.gif);
+	background-repeat: repeat;
+	border-top: 2px solid #485686;
+	border-bottom: 2px solid #FFFFFF;
+	height: 23px;
+	text-align: right;
+	padding: 0px 40px;
+	margin: 0px;
+}
+
+#globalNav img {
+	padding: 0px 10px;
+	vertical-align: middle
+}
+
+.menu {
+	border: 2px solid #485686;
+	border-top: 2px;
+}
+
+TD 
+{
+	vertical-align:top;
+}
+
+
+/*=====================================================================
+Styles for Ad Campaign Page
+---------------------------------------------------------------------*/
+
+#instructionsImage
+{
+	margin:20px auto;	
+	display:block;
+}
+
+.campaignTitle
+{
+	margin: 15px;
+}
+
+
+.campaign 
+{
+	
+}
+
+.campaign LI
+{
+	
+	float:left;
+	list-style-type: none;
+	width: 586px;
+}
+
+.campaignList
+{
+	margin:0 30px;
+	display:block;
+	position:relative;
+}
+
+.campaign .campaignList li
+{
+	list-style-type:none;
+	display:block;
+	float:left;
+	clear:none;
+	padding:0px 10px;
+	width:150px;
+	height:110px;
+	border:none;
+	text-align:center;
+}
+
+.campaignList IMG
+{
+	border:none;
+}
+
+/*=====================================================================
+Styles for Vital Link Page
+---------------------------------------------------------------------*/
+
+.vitalLinkVideo
+{
+	margin: 0 auto;
+	width:500px;
+	
+}
+
+/*=====================================================================
+Styles for GoogleTransit Box
+---------------------------------------------------------------------*/
+
+.GoogleTransitLocation 
+{
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.GoogleTransitLocation td
+{
+	vertical-align: middle;
+}
+
+.GoogleTransitLocationLabel
+{
+	width: 45px;
+}
+
+.GoogleTransitInputLabel 
+{
+	padding-left: 2px;
+}
+
+
+.GoogleTransitLocation input
+{
+	width: 258px;
+}
+
+.GoogleTransitTime 
+{
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.GoogleTransitRadio
+{
+	margin-left: 2px;
+}
+
+/*.GoogleTransitTime input
+{
+	width: 66px;
+	padding-left: 3px;
+}*/
+
+.GoogleTransitInput
+{
+	width: 66px;
+	padding-left: 3px;
+}
+
+
+.GoogleTransitForm td
+{
+	padding: 5px 0px;
+}
+
+.GoogleTransitForm table 
+{
+	margin: 0;
+	padding: 0;
+}
+
+.GoogleTransitForm form
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+.GoogleTransitForm table td table td {
+	padding: 0px;
+}
+
+.GoogleTransitHeader 
+{
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+	
+}
+
+.GoogleTransitHeader h4
+{
+	padding: 0;
+	vertical-align: middle;
+	margin: 0;
+}	
+
+.GoogleTransitExample 
+{
+	font-size: 9px;
+}
+
+.GoogleTransitDisclaimerBold{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.GoogleTransitSubmit td 
+{
+	vertical-align: bottom;
+}
+
+.GoogleTransitSubmit a:link {text-decoration:none; color: #236c21;}
+.GoogleTransitSubmit a:hover {text-decoration:none; color: #236c21;}
+.GoogleTransitSubmit a:active {text-decoration:none; color: #236c21;}
+.GoogleTransitSubmit a:visited {text-decoration:none; color: #236c21;}
+.GoogleTransitSubmit a:visited:hover {text-decoration:none; color: #236c21;}
+
+
+.highslide-html {
+    background-color: white;
+}
+.highslide-html-blur {
+}
+.highslide-html-content {
+	position: absolute;
+    display: none;
+}
+.highslide-loading {
+    display: block;
+	color: black;
+	font-size: 8pt;
+	font-family: sans-serif;
+	font-weight: bold;
+    text-decoration: none;
+	padding: 2px;
+	border: 1px solid black;
+    background-color: white;
+    
+    padding-left: 22px;
+    background-image: url(/_scripts/highslide/loader.white.gif);
+    background-repeat: no-repeat;
+    background-position: 3px 1px;
+}
+a.highslide-credits,
+a.highslide-credits i {
+    padding: 2px;
+    color: silver;
+    text-decoration: none;
+	font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+    color: white;
+    background-color: gray;
+}
+
+
+/* Styles for the popup */
+.highslide-wrapper {
+	background-color: white;
+}
+.highslide-wrapper .highslide-html-content {
+    width: 400px;
+    padding: 5px;
+}
+.highslide-wrapper .highslide-header div {
+}
+.highslide-wrapper .highslide-header ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+.highslide-wrapper .highslide-header ul li {
+	display: inline;
+	padding-left: 1em;
+}
+.highslide-wrapper .highslide-header ul li.highslide-previous, .highslide-wrapper .highslide-header ul li.highslide-next {
+	display: none;
+}
+.highslide-wrapper .highslide-header a {
+	font-weight: bold;
+	color: gray;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.highslide-wrapper .highslide-header a:hover {
+	color: black;
+}
+.highslide-wrapper .highslide-header .highslide-move a {
+	cursor: move;
+}
+.highslide-wrapper .highslide-footer {
+	height: 11px;
+}
+.highslide-wrapper .highslide-footer .highslide-resize {
+	float: right;
+	height: 11px;
+	width: 11px;
+	background: url(/_scripts/highslide/resize.gif);
+}
+.highslide-wrapper .highslide-body {
+}
+.highslide-move {
+    cursor: move;
+}
+.highslide-resize {
+    cursor: nw-resize;
+}
+
+/* These must be the last of the Highslide rules */
+.highslide-display-block {
+    display: block;
+}
+.highslide-display-none {
+    display: none;
+}
+
+/* added 2008-06-30 by Tom Easter 
+   to add a style for a large table in the news section
+*/
+
+.newsRouteTable 
+{
+	font-size: 10px;
+	border-collapse:collapse;
+}

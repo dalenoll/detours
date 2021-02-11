@@ -1,0 +1,25 @@
+<h1>Roles | <%= link_to_if_accessible( 'New Role', { :controller => 'roles', :action => 'new' }) %></h1>
+<div id="detour-list">
+
+<table>
+  <tr>
+    <th>Role Name</th>
+  </tr>
+
+<% for role in @roles %>
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+    <td><%=h role.name %></td>
+    <%= td_link_to_if_accessible('Edit', { :controller => 'roles', :action => 'edit', :id => role }) %>
+    <%= td_link_to_if_accessible('Delete', { :controller => 'roles', :action => 'destroy', :id => role }, { :confirm => 'Are you sure?', :method => :delete}) %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+<div id='lower-navigation'>
+<h2>
+<%= link_to_if_accessible('New Role', { :controller => 'roles', :action => 'new' }) %>
+</h2>
+</div>

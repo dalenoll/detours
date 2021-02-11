@@ -1,0 +1,3 @@
+<div id="detour-list">
+
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">

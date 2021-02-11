@@ -1,0 +1,82 @@
+<h1>New Detour</h1>
+
+<% form_for(@detour) do |f| %>
+  <%= f.error_messages %>
+
+  <table>
+    <tr>
+      <td><%= f.label(:detour_type, 'Type') %></td>
+      <td><%= f.select(:detour_type, [ 
+		[ 'Unplanned - No Sch Change', 1 ],
+		[ 'Planned - Sch Change', 2 ],
+		[ 'Unplanned - Sch Change', 3 ],
+		[ 'Planned - No Sch Change', 4 ]
+		 ]) %></td>
+      <td><%= f.label :reason %></td>
+      <td><%= f.text_field(:reason, :size => 20) %></td>
+    </tr>
+    <tr>
+      <td><%= f.label(:start_date, 'Start') %></td>
+      <td><%= f.date_select(:start_date, :order => [:day, :month, :year]) %></td>
+      <td><%= f.label(:start_time, 'Start Time') %></td>
+      <td><%= f.text_field(:start_time ) %></td> 
+    <tr>
+    <tr>
+      <td><%= f.label(:end_date, 'End') %></td>
+      <td><%= f.date_select(:end_date, { :order => [:day, :month, :year, :hour, :minute], :include_blank => true, :default => 0 }) %></td>
+      <td><%= f.label(:end_time, 'End Time') %></td>
+      <td><%= f.text_field(:end_time ) %></td> 
+    </tr>
+    <tr>
+      <td><%= f.label :route %></td>
+      <td><%= f.text_field(:route, :size => 20 ) %></td>
+      <td><%= f.label :direction %></td>
+      <td><%= f.select( :direction, [
+		[ 'Northbound', 0 ],
+		[ 'Southbound', 1 ],
+		[ 'Eastbound', 2 ],
+		[ 'Westbound', 3 ],
+		[ 'Both', 4 ],
+		[ 'All', 5 ]
+		]) %></td>
+    </tr>
+    <tr>
+      <td valign="top"><%= f.label :description %></td>
+      <td colspan="3"><%= f.text_area(:description, :cols => 57, :rows => 6) %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :supervisor %></td>
+      <td><%= f.text_field(:supervisor, :size => 20) %></td>
+      <td><%= f.label :dispatcher %></td>
+      <td><%= f.text_field(:dispatcher, :size => 20) %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :bulletin_number %></td>
+      <td><%= f.text_field(:bulletin_number, :size => 20) %></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <fieldset>
+    <legend>Notification: </legend>
+      <table id="notification-box">
+        <% @nrs.each_with_index do | nr, index | %>
+          <% fields_for "@nrs[#{index}]", nr  do |f| %>
+            <tr>
+             <td><%= nr.long_name %></td>
+             <td><%= f.label :notify %><%= f.check_box :notify %>
+             <td class="disabled"><%= f.label :acknowledge, "Request Acknowledgement"%><%= f.check_box(:acknowledge,{ :disabled => "disabled"}) %>
+             <%= f.hidden_field :location_id %>
+            </tr>
+          <% end %>
+        <% end %>
+      </table>
+  </fieldset>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<div id='lower-navigation'>
+<h2><%= link_to 'Back to List', detours_path %></h2>
+</div>

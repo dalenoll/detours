@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Detour Maintenance</title>
+<!-- START:stylesheet -->
+  <%= stylesheet_link_tag "detour", :media => "all" %><!-- <label id="code.slt"/> -->
+<!-- END:stylesheet -->
+</head>
+<body >
+  <div id="banner">
+    <%= image_tag("mcts-main-header.gif") %>
+    <!-- <%= @page_title || "Location Maintenance" %>--><!-- <label id="code.depot.e.title"/> -->
+  </div>
+  <div id="header-bar">
+  </div>
+  <div id="columns">
+    <div id="side">
+      <a href="/detours">Detours</a><br />
+      <a href="/detours/inactive">Canceled Detours</a><br />
+      <a href="/locations">Locations</a><br />
+      <a href="/notifications">Notifications</a><br />
+      <a href="http://www..../contact">Contact</a><br />
+    </div>
+    <div id="main">
+      <% if flash[:notice] -%>
+        <div id="notice"><%= flash[:notice] %></div>
+      <% end -%>
+
+      <%= yield :layout %>
+    </div>
+  </div>
+</body>
+</html>

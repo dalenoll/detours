@@ -1,0 +1,33 @@
+<h1>Notifications | <%= link_to_if_accessible( 'New notification', { :controller => 'notifications', :action => 'new' }) %></h1>
+
+<div id="detour-list">
+<table>
+  <tr>
+    <th>Detour</th>
+    <th>Location</th>
+    <th>Type</th>
+    <th>Method</th>
+    <th>Delivered</th>
+    <th>Acknowledged</th>
+  </tr>
+
+<% for notification in @notifications %>
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+    <td><%=h notification.detour_id %></td>
+    <td><%=h notification.location.short_name %></td>
+    <td><%=h notification.notification_type %></td>
+    <td><%=h notification.notification_method %></td>
+    <td><%=h notification.delivered_str %></td>
+    <td><%=h notification.acknowledged_at %></td>
+    <%= td_link_to_if_accessible('Show', { :controller => 'notifications', :action => 'show', :id => notification }) %>
+    <%= td_link_to_if_accessible('Edit', { :controller => 'notifications', :action => 'edit', :id => notification }) %>
+    <%= td_link_to_if_accessible('Delete', { :controller => 'notifications', :action => 'destroy', :id => notification }, {:confirm => 'Are you sure?', :method => :delete}) %>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<div id='lower-navigation'>
+<h2><%= link_to_if_accessible( 'New notification', { :controller => 'notifications', :action => 'new' }) %></h2>
+</div>

@@ -1,0 +1,82 @@
+8
+
+dir
+66
+http://wayland.mcts.org/repos/detour/config
+http://wayland.mcts.org/repos/detour
+
+
+
+2010-01-11T18:51:00.806938Z
+59
+dale
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5fb68575-c2e4-48ec-a395-dbedeceb3241
+
+routes.rb
+file
+71
+
+
+
+2012-07-20T20:19:38.000000Z
+f7fd7d85ad123fa00804179e03b58b69
+2012-07-20T20:28:58.853232Z
+71
+dale
+
+database.yml
+file
+
+
+
+
+2009-10-12T16:01:41.000000Z
+3b65e1953bcb13bfaadda1f1f2eccd27
+2009-10-12T18:15:35.476058Z
+49
+dale
+
+boot.rb
+file
+
+
+
+
+2009-09-17T15:24:01.000000Z
+bafbe71089a2c9f6414fb47b3978bcef
+2008-11-29T16:16:12.299158Z
+1
+dale
+
+initializers
+dir
+
+environment.rb
+file
+
+
+
+
+2010-01-11T13:58:44.000000Z
+618970aba4795d3aec5e4136aca0b5c5
+2010-01-11T18:51:00.806938Z
+59
+dale
+
+environments
+dir
+

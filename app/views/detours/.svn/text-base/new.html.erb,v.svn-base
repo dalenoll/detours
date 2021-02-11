@@ -1,0 +1,181 @@
+head	1.4;
+access;
+symbols;
+locks
+	dale:1.4; strict;
+comment	@# @;
+
+
+1.4
+date	2008.11.29.04.35.29;	author dale;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.11.28.02.53.11;	author dale;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.11.27.13.17.36;	author dale;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.11.26.02.45.49;	author dale;	state Exp;
+branches;
+next	;
+
+
+desc
+@Working with separate fieldsets for each station
+@
+
+
+1.4
+log
+@Working with notifications
+@
+text
+@<h1>New Detour</h1>
+
+<% form_for(@@detour) do |f| %>
+  <%= f.error_messages %>
+
+  <table>
+    <tr>
+      <td><%= f.label(:detour_type, 'Type') %></td>
+      <td><%= f.select(:detour_type, [ 
+		[ 'Unplanned - No Sch Change', 1 ],
+		[ 'Planned - Sch Change', 2 ],
+		[ 'Unplanned - Sch Change', 3 ],
+		[ 'Planned - No Sch Change', 4 ]
+		 ]) %></td>
+      <td><%= f.label :reason %></td>
+      <td><%= f.text_field(:reason, :size => 20) %></td>
+    </tr>
+    <tr>
+      <td><%= f.label(:start_date, 'Start') %></td>
+      <td><%= f.date_select(:start_date, :order => [:day, :month, :year]) %></td>
+      <td><%= f.label(:start_time, 'Time') %></td>
+      <td><%= f.time_select(:start_time) %></td>
+    <tr>
+    <tr>
+      <td><%= f.label(:end_date, 'End') %></td>
+      <td><%= f.date_select(:end_date, :order => [:day, :month, :year, :hour, :minute]) %></td>
+      <td><%= f.label(:end_time, 'Time') %></td>
+      <td><%= f.time_select(:end_time) %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :route %></td>
+      <td><%= f.text_field(:route, :size => 20 ) %></td>
+      <td><%= f.label :direction %></td>
+      <td><%= f.select( :direction, [
+		[ 'Northbound', 0 ],
+		[ 'Southbound', 1 ],
+		[ 'Eastbound', 2 ],
+		[ 'Westbound', 3 ],
+		[ 'Both', 4 ],
+		[ 'All', 5 ]
+		]) %></td>
+    </tr>
+    <tr>
+      <td valign="top"><%= f.label :description %></td>
+      <td colspan="3"><%= f.text_area(:description, :cols => 68, :rows => 6) %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :supervisor %></td>
+      <td><%= f.text_field(:supervisor, :size => 20) %></td>
+      <td><%= f.label :dispatcher %></td>
+      <td><%= f.text_field(:dispatcher, :size => 20) %></td>
+    </tr>
+  </table>
+  <fieldset>
+    <legend>Notification: </legend>
+      <table id="notification-box">
+        <% @@nrs.each_with_index do | nr, index | %>
+          <% fields_for "@@nrs[#{index}]", nr  do |f| %>
+            <tr>
+             <td><%= nr.long_name %></td>
+             <td><%= f.label :notify %><%= f.check_box :notify %>
+             <td class="disabled"><%= f.label :acknowledge, "Request Acknowledgement"%><%= f.check_box(:acknowledge,{ :disabled => "disabled"}) %>
+             <%= f.hidden_field :location_id %>
+            </tr>
+          <% end %>
+        <% end %>
+      </table>
+  </fieldset>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back to List', detours_path %>
+@
+
+
+1.3
+log
+@working with cleaner code on the multiple notication locations.
+@
+text
+@d62 2
+a63 1
+             <td><%= f.label :acknowledge, "Request Acknowledgement"%><%= f.check_box :acknowledge %>
+@
+
+
+1.2
+log
+@sorta working with collection broken out manually and building names
+@
+text
+@d57 8
+a64 12
+    <% @@nr.each do |location| %>
+        <% fields_for :location do |l| %>
+          <tr>
+            <td><%= location.long_name %></td>
+            <% field_id = "location_notification_" + location.location_id.to_s + "_id" %>
+            <% field_name = "location_notification_" + location.location_id.to_s + "_name" %> 
+            <td>Notify: <%= l.check_box(:notify,{ :id => field_id, :name => field_name } )  %></td>
+            <% field_id = "location_acknowledge_" + location.location_id.to_s + "_id" %>
+            <% field_name = "location_acknowledge_" + location.location_id.to_s + "_name" %> 
+            <td class="disabled">Require Acknowledgement: <%= l.check_box(:acknowledge, { :id => field_id, :name => field_name, :disabled => 'disabled' } ) %></td>
+
+          </tr>
+a65 1
+    <% end %>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+<h1>New detour</h1>
+a53 1
+  <% @@nr.each do |location| %>
+d55 16
+a70 8
+    <legend><%= location.long_name %></legend>
+    <% fields_for :location do |l| %>
+      <table>
+        <tr>
+<!---          <td><%= location.long_name %></td>  --->
+          <td>Notify: <%= l.check_box(:notify)  %></td>
+          <td>Require Acknowledgement: <%= l.check_box(:acknowledge) %></td>
+        </tr>
+a71 1
+    <% end %>
+a72 6
+  <% end %>
+  <p>
+   <% @@nr.each do |nr| %>
+   <%= nr.short_name %><br />
+   <% end %>
+  </p>
+@

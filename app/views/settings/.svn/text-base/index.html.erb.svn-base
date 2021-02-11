@@ -1,0 +1,24 @@
+<h1>Settings | <%= link_to_if_accessible('New Setting', { :controller => 'settings', :action => 'new'}) %></h1>
+
+<div id='detour-list'>
+  <table>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  
+  <% for setting in @settings %>
+    <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+      <td width='20%'><%=h setting.parameter %></td>
+      <td><%=h setting.value %></td>
+      <%= td_link_to_if_accessible('Edit', { :controller => 'settings', :action => 'edit', :id => setting}) %>
+      <%= td_link_to_if_accessible('Delete',{ :controller => 'settings', :action => 'destroy', :id => setting}, {:confirm => 'Are you sure?', :method => :delete }) %>
+    </tr>
+  <% end %>
+  </table>
+</div>
+<div id='lower-navigation'>
+<h2>
+<%= link_to_if_accessible('New Setting', { :controller => 'settings', :action => 'new'}) %>
+</h2>
+</div>

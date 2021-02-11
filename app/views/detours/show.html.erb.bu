@@ -1,0 +1,68 @@
+<p>
+  <b>Start date:</b>
+  <%=h @detour.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%=h @detour.end_date %>
+</p>
+
+<p>
+  <b>Route:</b>
+  <%=h @detour.route %>
+</p>
+
+<p>
+  <b>Direction:</b>
+  <%=h @detour.direction %>
+</p>
+
+<p>
+  <b>Detour type:</b>
+  <%=h @detour.detour_type %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @detour.description %>
+</p>
+
+<p>
+  <b>Supervisor:</b>
+  <%=h @detour.supervisor %>
+</p>
+
+<p>
+  <b>Dispatcher:</b>
+  <%=h @detour.dispatcher %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%=h @detour.reason %>
+</p>
+
+<p>
+  <b>Create addr:</b>
+  <%=h @detour.create_addr %>
+</p>
+
+<p>
+  <b>Cancel addr:</b>
+  <%=h @detour.cancel_addr %>
+</p>
+
+<p>
+  <b>Create pdf path:</b>
+  <%=h @detour.create_pdf_path %>
+</p>
+
+<p>
+  <b>Cancel pdf path:</b>
+  <%=h @detour.cancel_pdf_path %>
+</p>
+
+
+<%= link_to 'Edit', edit_detour_path(@detour) %> |
+<%= link_to 'Back', detours_path %>

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repos/detour/!svn/ver/66/db/migrate
+END
+20081119012619_create_detours.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/detour/!svn/ver/1/db/migrate/20081119012619_create_detours.rb
+END
+20081129041431_fix_email_default_in_location.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/detour/!svn/ver/1/db/migrate/20081129041431_fix_email_default_in_location.rb
+END
+20090924153421_add_bulletin_num_to_detours.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/detour/!svn/ver/66/db/migrate/20090924153421_add_bulletin_num_to_detours.rb
+END
+20081130230217_create_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/detour/!svn/ver/2/db/migrate/20081130230217_create_sessions.rb
+END
+20081130025635_create_settings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/detour/!svn/ver/2/db/migrate/20081130025635_create_settings.rb
+END
+20081123201429_update_canceled_fields.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/detour/!svn/ver/1/db/migrate/20081123201429_update_canceled_fields.rb
+END
+20081206045201_create_controllers_and_actions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/detour/!svn/ver/8/db/migrate/20081206045201_create_controllers_and_actions.rb
+END
+20081206042026_drop_controllers_and_actions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/detour/!svn/ver/7/db/migrate/20081206042026_drop_controllers_and_actions.rb
+END
+20081130034913_rename_settings_field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/detour/!svn/ver/2/db/migrate/20081130034913_rename_settings_field.rb
+END
+20081208235203_add_fullname_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/detour/!svn/ver/66/db/migrate/20081208235203_add_fullname_to_users.rb
+END
+20091012010350_add_detour_update.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/detour/!svn/ver/43/db/migrate/20091012010350_add_detour_update.rb
+END
+20100623024808_add_notification_default.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/detour/!svn/ver/66/db/migrate/20100623024808_add_notification_default.rb
+END
+20081119031121_change_detour_dates2.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/detour/!svn/ver/1/db/migrate/20081119031121_change_detour_dates2.rb
+END
+20081206003844_add_roles_rights_controllers_and_actions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/detour/!svn/ver/2/db/migrate/20081206003844_add_roles_rights_controllers_and_actions.rb
+END
+20091013164800_add_postcript_field_to_printer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/detour/!svn/ver/66/db/migrate/20091013164800_add_postcript_field_to_printer.rb
+END
+20081124235757_create_notifications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/detour/!svn/ver/1/db/migrate/20081124235757_create_notifications.rb
+END
+20081117004104_create_locations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/detour/!svn/ver/1/db/migrate/20081117004104_create_locations.rb
+END
+20081119014026_alter_detour_dates.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/detour/!svn/ver/1/db/migrate/20081119014026_alter_detour_dates.rb
+END
+20081201021800_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/detour/!svn/ver/2/db/migrate/20081201021800_create_users.rb
+END

@@ -1,0 +1,12 @@
+<h1>Editing stops</h1>
+
+<% form_for(@stops) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @stops %> |
+<%= link_to 'Back', stops_path %>

@@ -1,0 +1,29 @@
+<div id="detour-list">
+<h1>Canceled Detours</h1>
+
+<table>
+  <tr>
+    <th>Route</th>
+    <th>Start date</th>
+    <th>Direction</th>
+    <th>Description</th>
+    <th>Cancel date</th>
+  </tr>
+
+<% for detour in @detours %>
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+    <td><%=h detour.route %></td>
+    <td><%=h detour.start_date_formated %></td>
+    <td><%=h detour.direction_str %></td>
+    <td><%=h detour.description %></td>
+    <td><%=h detour.cancel_date_formated %></td>
+    <td><%= link_to( 'Show', { :controller => 'detours', :action => 'show_inactive', :id => detour} ) %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+<div id='lower-navigation'>
+<h2>&nbsp;</h2>
+</div>
+

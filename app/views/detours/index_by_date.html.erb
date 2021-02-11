@@ -1,0 +1,29 @@
+<h1>Detours | <%= link_to_if_accessible( 'New Detour', { :controller => 'detours', :action => 'new' }) %></h1>
+
+<div id="detour-list">
+<table>
+  <tr>
+    <th>Route</th>
+    <th>Start date</th>
+    <th>Direction</th>
+    <th>Description</th>
+  </tr>
+
+<% for detour in @detours %>
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+    <td><%=h detour.route %></td>
+    <td><%=h detour.start_date_formated %></td>
+    <td><%=h detour.direction_str %></td>
+    <td><%=h detour.description %></td>
+    <td><%= link_to( 'Show', { :controller => 'detours', :action => 'show', :id => detour} ) %></td>
+    <%= td_link_to_if_accessible( 'Edit', { :controller => 'detours', :action => 'edit', :id => detour} ) %>
+    <%= td_link_to_if_accessible( 'Delete', { :controller => 'detours', :action => 'destroy', :id => detour}, { :confirm => 'Are you sure you want to delete this detour?', :method => :delete }) %>
+    <%= td_link_to_if_accessible( 'Cancel', { :controller => 'detours', :action => 'cancel_detour', :id => detour}, { :confirm => 'Has this detour ended?' }) %>
+  </tr>
+<% end %>
+</table>
+<br />
+</div>
+<div id='lower-navigation'>
+<h2><%= link_to_if_accessible( 'New Detour', { :controller => 'detours', :action => 'new' }) %></h2>
+</div>

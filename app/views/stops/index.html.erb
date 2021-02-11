@@ -1,0 +1,28 @@
+<h1>Moved Stops | <%= link_to_if_accessible( 'Move a Stop', { :controller => 'stops', :action => 'new' }) %></h1>
+
+<div id="detour-list">
+<table>
+  <tr>
+    <th>Start date</th>
+    <th>Direction</th>
+    <th>Description</th>
+  </tr>
+
+<% for stop in @stops %>
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+    <td><%=h stop.start_date_string %></td>
+    <td><%=h stop.direction_str %></td>
+    <td><%=h stop.description %></td>
+    <td><%= link_to( 'Show', { :controller => 'stops', :action => 'show', :id => stop} ) %></td>
+    <%= td_link_to_if_accessible( 'Edit', { :controller => 'stops', :action => 'edit', :id => stop} ) %>
+    <%= td_link_to_if_accessible( 'Delete', { :controller => 'stops', :action => 'destroy', :id => stop}, { :confirm => 'Are you sure you want to completely delete this record of a moved stop?', :method => :delete }) %>
+    <%= td_link_to_if_accessible( 'Cancel', { :controller => 'stops', :action => 'cancel_stop', :id => stop}, { :confirm => 'Has this stop been returned to it\'s original location?' }) %>
+  </tr>
+<% end %>
+</table>
+<br />
+</div>
+<div id='lower-navigation'>
+<h2><%= link_to_if_accessible( 'Move a Stop', { :controller => 'stops', :action => 'new' }) %></h2>
+</div>
+

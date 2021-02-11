@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repos/detour/!svn/ver/62/app/views/roles
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/detour/!svn/ver/62/app/views/roles/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/detour/!svn/ver/21/app/views/roles/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/detour/!svn/ver/62/app/views/roles/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/detour/!svn/ver/11/app/views/roles/show.html.erb
+END

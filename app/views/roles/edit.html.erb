@@ -1,0 +1,32 @@
+<h1>Edit Role</h1>
+
+<% form_for(@role) do |f| %>
+  <%= f.error_messages %>
+  <table>
+    <tr>
+      <td colspan='2'><%= f.label(:name, 'Role Name') %>: <%= f.text_field(:name, :size => 20) %></td>
+    </tr>
+    <tr>
+      <td colspan='2'><hr width='100%'></td>
+    </tr>
+    <% @available_rights.each_with_index do | right, index | %>
+      <% fields_for "@available_rights[#{index}]", right  do |f| %>
+        <tr>
+          <td><%= right.right_name %><%= f.hidden_field :right_name %></td>
+          <td><%= f.label :right_allowed %><%= f.check_box :right_allowed %></td>
+        </tr>
+      <% end %>
+    <% end %>
+    <tr>
+      <td>&nbsp;</td>
+      <td><%= f.submit "Update" %></td>
+    </tr>
+  </table>
+
+<% end %>
+
+<div id='lower-navigation'>
+<h2>
+<%= link_to 'Back to List', roles_path %>
+</h2>
+</div>

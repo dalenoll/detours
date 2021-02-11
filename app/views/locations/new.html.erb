@@ -1,0 +1,56 @@
+<h1>New location</h1>
+
+<% form_for(@location) do |f| %>
+  <%= f.error_messages %>
+
+  <table>
+    <tr>
+     <td><%= f.label(:short_name, "Abbr") %></td>
+     <td><%= f.text_field(:short_name, :size => '5', :maxlen => '5') %></td>
+     <td><%= f.label(:notify_by_default, "Notify by default") %></td>
+     <td><%= f.check_box :notify_by_default %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :long_name, "Name" %></td>
+      <td><%= f.text_field :long_name %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :fax_number %></td>
+      <td><%= f.text_field :fax_number %></td>
+      <td><%= f.label :fax_default %></td>
+      <td><%= f.check_box :fax_default %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :phone_number %></td>
+      <td><%= f.text_field :phone_number %></td>
+      <td><%= f.label :phone_default %></td>
+      <td><%= f.check_box :phone_default %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :email_address %></td>
+      <td><%= f.text_field :email_address %></td>
+      <td><%= f.label :email_default %></td>
+      <td><%= f.check_box :email_default %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :printer %></td>
+      <td><%= f.text_field :printer %></td>
+      <td><%= f.label :printer_default %></td>
+      <td><%= f.check_box :printer_default %></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><%= f.label :printer_is_postscript %></td>
+      <td><%= f.check_box :printer_is_postscript %></td>
+    </tr>
+
+  </table>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<div id='lower-navigation'>
+<h2><%= link_to 'Back to List', locations_path %></h2>
+</div>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repos/detour/!svn/ver/66/app/helpers
+END
+settings_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/detour/!svn/ver/2/app/helpers/settings_helper.rb
+END
+users_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/detour/!svn/ver/2/app/helpers/users_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/detour/!svn/ver/20/app/helpers/application_helper.rb
+END
+roles_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/detour/!svn/ver/11/app/helpers/roles_helper.rb
+END
+detours_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/detour/!svn/ver/50/app/helpers/detours_helper.rb
+END
+admin_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/detour/!svn/ver/20/app/helpers/admin_helper.rb
+END
+controllers_and_actions_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/detour/!svn/ver/8/app/helpers/controllers_and_actions_helper.rb
+END
+notifications_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/detour/!svn/ver/1/app/helpers/notifications_helper.rb
+END
+locations_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/detour/!svn/ver/66/app/helpers/locations_helper.rb
+END

@@ -1,0 +1,297 @@
+/* Style Sheet for detour application */
+/* Colors from the header gif */
+/* lightblue:  #3140F7 */
+/* darkblue:   #00089E */
+/* yellow:     #E9C600 */
+/* green:      #227B3D */
+
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+
+  width: 771px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#location-list table {
+  border-collapse: collapse;
+}
+
+#location-list .location-line-even {
+  background:   #f8f8f8;
+}
+
+#location-list .location-line-odd {
+  background:	#f0f0f0;
+}
+
+/*
+#detour-list {
+  float: left;
+  padding-left: 5px;
+	
+}
+*/
+
+
+#detour-list table {
+  border-collapse: collapse;
+  vertical-align: top;
+  width: 100%;
+  float: left;
+}
+
+#detour-list td, th {
+  vertical-align: top;
+  text-align: left;
+  padding-right: 5px;
+}
+
+#detour-list td > b {
+  color: #10103F;
+}
+
+#detour-list .detour-line-even {
+  background:   #f8f8f8;
+}
+
+#detour-list .detour-line-odd {
+  background:	#f0f0f0;
+}
+
+#notification-list table {
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+#notification-list td {
+  vertical-align: top;
+}
+
+#notification-list .notification-line-even {
+  background:   #f8f8f8;
+}
+
+#notification-list .notification-line-odd {
+  background:	#f0f0f0;
+}
+
+/* Styles for main page */
+
+#banner {
+  background: #FFFFFF;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-bottom: none;
+  height: 62px;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #282;
+  text-align: center;
+}
+#header-bar {
+  /* background: #10179A; */
+  background: #00089E;
+  height: 20px;
+  width: 771px;
+  color: white;
+}
+
+#user-id-bar {
+  padding-left: 1em;
+}
+
+#banner img {
+  background: #00089E;
+  float: left;
+}
+
+#columns {
+  padding-top: 1px;
+  background: white;
+}
+
+#main {
+  margin-left: 12em;
+  padding-top: 0ex;
+  padding-left: 2em;
+  background: white;
+}
+
+
+/* #main p.note { */
+p.note {
+  padding: 2px;
+  color: red;
+/*  background: #E9C600; */
+/*  width: 500px; */
+  width: 90%; 
+}
+
+#main a {
+  color: #F05050;
+  text-decoration: underline;
+}
+
+#main a:hover {
+  color: #2020F0;
+  text-decoration: none;
+}
+
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 12em;
+  /* background: #5B63F8; */
+  background: #3140F7;
+  font-family: serif, sans-serif;
+  height: 600px;
+}
+
+#side a {
+  color: white;
+  /* color: #bfb; */
+  font-size: medium;
+}
+
+#side a:hover {
+  color: #0B03F8;
+  font-size: medium;
+  /* background: #bfb;*/
+  background: white;
+}
+
+h1 {
+  font:  150% sans-serif;
+  color: #00089E;
+  border-bottom: 6px groove #3140F7;
+}
+
+h1 > a {
+  font:  75% sans-serif;
+  color: #226;
+}
+
+#show-detour input, textarea {
+  color: #000000;
+}
+
+#show-detour table {
+  background: #D0D0D0;
+  /* border: 1px solid #3140F7; */
+
+}
+
+#show-detour th {
+  color: white;
+  background: #3140F7;
+  /* background: #D0D0D0; */
+}
+
+#notification-box td {
+  text-align: left;
+}
+
+#notification-box .disabled {
+  /* background: #D0D0D0; */
+  text-decoration: line-through;
+}
+
+#show-notification input, textarea {
+  color: #000000;
+}
+
+#lower-navigation h2 {
+  font:  125% sans-serif;
+  color: #226;
+  border-top: 6px ridge #3140F7;
+}
+
+#lower-navigation a {
+  color: #F02020;
+  background-color: #FFF;
+  text-decoration: underline;
+}
+
+#lower-navigation a:hover {
+  color: #2020F0;
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+#indented {
+
+  margin-left: 25px;
+
+}
+#right-list table {
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+#right-list td {
+  vertical-align: top;
+}
+
+#right-list .right-line-even {
+  background:   #f8f8f8;
+}
+
+#right-list .right-line-odd {
+  background:	#f0f0f0;
+}
+

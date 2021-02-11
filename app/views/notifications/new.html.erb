@@ -1,0 +1,48 @@
+<h1>New notification</h1>
+
+<% form_for(@notification) do |f| %>
+  <%= f.error_messages %>
+  <table>
+    <tr>
+      <td><%= f.label :detour_id %></td>
+      <td><%= f.text_field :detour_id %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :location_id %></td>
+      <td><%= f.text_field :location_id %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :notification_type %></td>
+      <td><%= f.text_field :notification_type %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :notification_method %></td>
+      <td><%= f.text_field :notification_method %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :acknowledge_requested %></td>
+      <td><%= f.text_field :acknowledge_requested %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :last_attempt %></td>
+      <td><%= f.datetime_select :last_attempt %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :delivered %></td>
+      <td><%= f.text_field :delivered %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :acknowledged_at %></td>
+      <td><%= f.datetime_select :acknowledged_at %></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><%= f.submit "Create" %></td>
+    </tr>
+  </table>
+<% end %>
+
+<div id='lower-navigation'>
+<h2><%= link_to 'Back to List', notifications_path %></h2>
+</div>
+

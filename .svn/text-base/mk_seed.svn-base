@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mysqldump -udetour -pdetour detour_development controllers_and_actions roles rights roles_users rights_roles users settings locations > seed.sql

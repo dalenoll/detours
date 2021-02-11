@@ -1,0 +1,5 @@
+<div id='lower-navigation'>
+<h2>
+<%= link_to 'New Detour', new_detour_path %>
+</h2>
+</div>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  detour_id: 
+  location_id: 1
+  notification_type: MyString
+  notification_method: MyString
+  acknowledge_requested: 1
+  last_attempt: 2008-11-24 17:57:57
+  delivered: 1
+  acknowledged_at: 2008-11-24 17:57:57
+
+two:
+  detour_id: 
+  location_id: 1
+  notification_type: MyString
+  notification_method: MyString
+  acknowledge_requested: 1
+  last_attempt: 2008-11-24 17:57:57
+  delivered: 1
+  acknowledged_at: 2008-11-24 17:57:57

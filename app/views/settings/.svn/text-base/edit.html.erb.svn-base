@@ -1,0 +1,26 @@
+<h1>Edit Setting</h1>
+
+<% form_for(@setting) do |f| %>
+  <%= f.error_messages %>
+
+  <table>
+    <tr>
+      <td><%= f.label :parameter %></td>
+      <td><%= f.text_field :parameter %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :value %></td>
+      <td><%= f.text_field(:value, :size => 50)  %></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><%= f.submit "Update" %></td>
+    </tr>
+  </table>
+<% end %>
+
+<div id='lower-navigation'>
+<h2>
+<%= link_to 'Back to List', settings_path %>
+</h2>
+</div>

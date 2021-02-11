@@ -1,0 +1,52 @@
+8
+
+dir
+66
+http://wayland.mcts.org/repos/detour/test
+http://wayland.mcts.org/repos/detour
+
+
+
+2008-12-08T00:41:35.258347Z
+12
+dale
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5fb68575-c2e4-48ec-a395-dbedeceb3241
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2009-09-17T15:24:00.000000Z
+30478106e9df8977e79fc045df799e29
+2008-11-29T16:16:12.299158Z
+1
+dale
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

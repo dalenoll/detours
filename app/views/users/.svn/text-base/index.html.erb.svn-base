@@ -1,0 +1,26 @@
+<div id="detour-list">
+<h1>Users | <%= link_to_if_accessible('New user', { :controller => 'users', :action => 'new' }) %></h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Full Name</th>
+  </tr>
+
+<% for user in @users %>
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+    <td><%=h user.username %></td>
+    <td><%=h user.full_name %></td>
+    <%= td_link_to_if_accessible('Edit', { :controller => 'users', :action => 'edit', :id => user }) %>
+    <%= td_link_to_if_accessible('Delete',{ :controller => 'users', :action => 'destroy', :id => user }, {:confirm => 'Are you sure?', :method => :delete}) %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div id='lower-navigation'>
+<h2>
+<%= link_to_if_accessible('New user', { :controller => 'users', :action => 'new' })  %>
+</h2>
+</div>

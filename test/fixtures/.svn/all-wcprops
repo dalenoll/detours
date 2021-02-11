@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/repos/detour/!svn/ver/12/test/fixtures
+END
+rights.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/detour/!svn/ver/2/test/fixtures/rights.yml
+END
+settings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/detour/!svn/ver/2/test/fixtures/settings.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/detour/!svn/ver/2/test/fixtures/users.yml
+END
+roles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/detour/!svn/ver/12/test/fixtures/roles.yml
+END
+detours.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/detour/!svn/ver/1/test/fixtures/detours.yml
+END
+controllers_and_actions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/detour/!svn/ver/8/test/fixtures/controllers_and_actions.yml
+END
+notifications.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/detour/!svn/ver/1/test/fixtures/notifications.yml
+END
+locations.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/detour/!svn/ver/1/test/fixtures/locations.yml
+END

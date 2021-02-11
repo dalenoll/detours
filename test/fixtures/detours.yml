@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  start_date: 2008-11-18
+  end_date: 2008-11-18
+  route: MyString
+  direction: 1
+  detour_type: 1
+  description: MyText
+  supervisor: MyString
+  dispatcher: MyString
+  reason: MyString
+  create_addr: MyString
+  cancel_sddr: MyString
+  create_pdf_path: MyString
+  cancel_pdf_path: MyString
+
+two:
+  start_date: 2008-11-18
+  end_date: 2008-11-18
+  route: MyString
+  direction: 1
+  detour_type: 1
+  description: MyText
+  supervisor: MyString
+  dispatcher: MyString
+  reason: MyString
+  create_addr: MyString
+  cancel_sddr: MyString
+  create_pdf_path: MyString
+  cancel_pdf_path: MyString

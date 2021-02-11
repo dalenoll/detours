@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/repos/detour/!svn/ver/49/log
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repos/detour/!svn/ver/1/log/test.log
+END
+server.log
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/repos/detour/!svn/ver/1/log/server.log
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/repos/detour/!svn/ver/66/
+END
+process_notifications.pl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/detour/!svn/ver/70/process_notifications.pl
+END
+notifications.inc
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/detour/!svn/ver/28/notifications.inc
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/repos/detour/!svn/ver/1/Rakefile
+END
+detour_development.dmp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/detour/!svn/ver/22/detour_development.dmp
+END
+mk_c_and_a_intserts
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repos/detour/!svn/ver/9/mk_c_and_a_intserts
+END
+notes
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/repos/detour/!svn/ver/52/notes
+END
+detour_seed_data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repos/detour/!svn/ver/22/detour_seed_data.sql
+END
+cont_and_act.txt
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repos/detour/!svn/ver/9/cont_and_act.txt
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/repos/detour/!svn/ver/1/README
+END
+idx.txt
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/repos/detour/!svn/ver/9/idx.txt
+END
+lowernav.erb
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repos/detour/!svn/ver/2/lowernav.erb
+END
+canda.sql
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/repos/detour/!svn/ver/9/canda.sql
+END
+ToDo
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/repos/detour/!svn/ver/44/ToDo
+END
+mk_seed
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/repos/detour/!svn/ver/30/mk_seed
+END
+clear_old_sessions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/detour/!svn/ver/23/clear_old_sessions.sql
+END
+seed.sql
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/repos/detour/!svn/ver/52/seed.sql
+END

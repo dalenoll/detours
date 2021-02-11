@@ -1,0 +1,9 @@
+Channel: IAX2/tie2kk/3279
+callerid: Detour Notification <3277>
+MaxRetries: 1
+RetryTime: 300
+WaitTime: 20
+Context: mcts-call-notification
+Extension: DETON
+Priority: 1
+Set: notificationid=1

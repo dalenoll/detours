@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  short_name: MyString
+  long_name: MyString
+  fax_number: MyString
+  fax_default: 1
+  phone_number: MyString
+  phone_default: 1
+  email_address: MyString
+  email_dafault: 1
+  printer: MyString
+  printer_default: 1
+
+two:
+  short_name: MyString
+  long_name: MyString
+  fax_number: MyString
+  fax_default: 1
+  phone_number: MyString
+  phone_default: 1
+  email_address: MyString
+  email_dafault: 1
+  printer: MyString
+  printer_default: 1

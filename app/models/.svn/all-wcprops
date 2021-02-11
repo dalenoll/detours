@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repos/detour/!svn/ver/66/app/models
+END
+right.rb
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repos/detour/!svn/ver/2/app/models/right.rb
+END
+setting.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/detour/!svn/ver/11/app/models/setting.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repos/detour/!svn/ver/21/app/models/user.rb
+END
+role.rb
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repos/detour/!svn/ver/11/app/models/role.rb
+END
+detour.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repos/detour/!svn/ver/71/app/models/detour.rb
+END
+controllers_and_action.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/detour/!svn/ver/11/app/models/controllers_and_action.rb
+END
+notification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/detour/!svn/ver/66/app/models/notification.rb
+END
+location.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/detour/!svn/ver/66/app/models/location.rb
+END

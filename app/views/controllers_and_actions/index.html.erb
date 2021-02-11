@@ -1,0 +1,32 @@
+<h1>Controllers and Actions | <%= link_to_if_accessible('New Controller and Action', { :controller => 'controllers_and_actions', :action => 'new'}) %></h1>
+
+<div id='detour-list'>
+<table>
+  <tr>
+    <td colspan = '3'><b>New</b> and <b>create</b> must both be granted to add records.<br /><b>Edit</b> and <b>update</b> must both be granted to update records.</td>
+  <tr>
+  <tr>
+    <th>Name</th>
+    <th>Controller</th>
+    <th>Action</th>
+  </tr>
+
+<% for controllers_and_action in @controllers_and_actions %>
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+    <td><%=h controllers_and_action.name %></td>
+    <td><%=h controllers_and_action.controller %></td>
+    <td><%=h controllers_and_action.action %></td>
+    <%= td_link_to_if_accessible('Edit', { :controller => 'controllers_and_actions', :action => 'edit', :id => controllers_and_action}) %>
+    <%= td_link_to_if_accessible('Delete', { :controller => 'controllers_and_actions', :action => 'destroy', :id => controllers_and_action}, { :confirm => 'Are you sure?', :method => :delete }) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+</div>
+
+<div id='lower-navigation'>
+<h2>
+<%= link_to_if_accessible('New Controller and Action', { :controller => 'controllers_and_actions', :action => 'new'}) %>
+</h2>
+</div>

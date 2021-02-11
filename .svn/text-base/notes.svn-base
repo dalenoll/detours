@@ -1,0 +1,10 @@
+Install schema into production:
+
+RAILS_ENV=production rake db:schema:load
+
+
+Run server in production:
+
+script/server --port=4000 --environment=production
+
+

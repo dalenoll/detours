@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/repos/detour/!svn/ver/8/test/unit
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/detour/!svn/ver/2/test/unit/user_test.rb
+END
+role_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/detour/!svn/ver/2/test/unit/role_test.rb
+END
+detour_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/detour/!svn/ver/1/test/unit/detour_test.rb
+END
+controllers_and_action_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/detour/!svn/ver/8/test/unit/controllers_and_action_test.rb
+END
+notification_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/detour/!svn/ver/1/test/unit/notification_test.rb
+END
+location_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/detour/!svn/ver/1/test/unit/location_test.rb
+END
+right_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/detour/!svn/ver/2/test/unit/right_test.rb
+END
+setting_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/detour/!svn/ver/2/test/unit/setting_test.rb
+END

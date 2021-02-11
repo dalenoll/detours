@@ -1,0 +1,32 @@
+<h1>Locations | <%= link_to_if_accessible( 'New Location', { :controller => 'locations', :action => 'new' }) %></h1>
+
+<div id='detour-list'>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Default</th>
+    <!-- <th>Fax</th> -->
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Printer</th>
+  </tr>
+
+<% for location in @locations %>
+  <tr class="<%= cycle('detour-line-odd', 'detour-line-even') %>">
+    <td><%=h location.long_name %></td>
+    <td><%= location.notify_by_default_str %></td>
+<!--    <td><%= fax(location) %></td> -->
+    <td><%= phone(location) %></td>
+    <td><%= email(location) %></td>
+    <td><%= printer(location) %></td>
+    <%= td_link_to_if_accessible( 'Edit', { :controller => 'locations', :action => 'edit', :id => location }) %>
+    <%= td_link_to_if_accessible( 'Delete', { :controller => 'locations', :action => 'destroy', :id => location }, { :confirm => 'Are you sure?', :method => :delete}) %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+</div>
+<div id='lower-navigation'>
+<h2><%= link_to_if_accessible( 'New Location', { :controller => 'locations', :action => 'new' }) %></h2>
+</div>
